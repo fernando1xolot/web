@@ -3,41 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Producto</title>
+    <title>Artículos de Calzados</title>
     <style>
-        .producto {
-            border: 1px solid #ccc;
-            border-radius: 10px;
-            padding: 5px;
-            margin-bottom: 20px;
-            max-width: 300px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        .nombre-producto {
-            font-weight: bold;
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
         }
-        .precio {
-            color: green;
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
-        .descripcion {
-            margin-top: 10px;
+        .item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        .imagen-producto {
-            max-width: 50%;
+        .item img {
+            width: 100%;
             height: auto;
-            margin-bottom: 5px;
+        }
+        .item-content {
+            padding: 15px;
+        }
+        .item-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .item-description {
+            font-size: 1em;
+            margin-bottom: 15px;
+            color: #666;
+        }
+        .item-price {
+            font-size: 1.2em;
+            color: #e67e22;
         }
     </style>
 </head>
-<ul>
-<li><a href="INICIO.html">Inicio</a></li>
-</ul>
 <body>
-    <div class="producto">
-        <img src="abias.jpg" alt="Producto" class="imagen-producto">
-        <div class="Abibas Wite neaker">Abibas Wite neaker</div>
-        <div class="precio">$2,000</div>
-        <div class="descripcion">Fabricados con materiales de alta calidad, como cuero sintético, malla transpirable y suelas de goma duraderas, los tenis abibas casuales ofrecen un ajuste cómodo y seguro durante todo el día.</div>
-        <button>Agregar al carrito</button>
+    <div class="container">
+        <h1>Calzados</h1>
+        <div class="grid">
+            <div class="item">
+                <img src="abias.jpg" alt="tenis">
+                <div class="item-content">
+                    <h2 class="item-title">White</h2>
+                    <p class="item-description">Calzado cómodo</p>
+                    <p class="item-price">$2,000.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="run.webp" alt="Zapato 2">
+                <div class="item-content">
+                    <h2 class="item-title"> Run Falcon 3.0</h2>
+                    <p class="item-description">ideales para salir a correr</p>
+                    <p class="item-price">$900.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="sandalias.avif" alt="Zapato 3">
+                <div class="item-content">
+                    <h2 class="item-title">Sandalias adilette aqua</h2>
+                    <p class="item-description">Un estilo icónico para superficies resbaladizas</p>
+                    <p class="item-price">$500.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="campus.jpg" alt="Zapato 4">
+                <div class="item-content">
+                    <h2 class="item-title">Campus 00</h2>
+                    <p class="item-description">son un verdadero icono de la moda urbana</p>
+                    <p class="item-price">$2500.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="X.jpg" alt="Zapato 5">
+                <div class="item-content">
+                    <h2 class="item-title">Tenis De Fútbol X Crazyfast</h2>
+                    <p class="item-description">Elegante como los pases de messi</p>
+                    <p class="item-price">$3500.00</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://via.placeholder.com/300x200" alt="Zapato 6">
+                <div class="item-content">
+                    <h2 class="item-title">Botines</h2>
+                    <p class="item-description">Moderno y cómodo para el día a día.</p>
+       <p class="item-price">$60.00</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
